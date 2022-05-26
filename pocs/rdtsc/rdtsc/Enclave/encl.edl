@@ -1,0 +1,10 @@
+enclave {
+	
+	trusted {
+        public void enclave_ecall([out] uint64_t *tsc1, [out] uint64_t *tsc2);
+    };
+	
+	untrusted {
+        void test_ocall(void);
+	};
+};
